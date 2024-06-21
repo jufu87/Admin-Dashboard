@@ -1,0 +1,1 @@
+This is a project to create an Admin Dashboard for theodinproject.com curriculum involving newly acquired CSS Grid knowledge.
