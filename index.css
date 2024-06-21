@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
+}
+
+div {
+    outline: 1px black solid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.dashboard {
+    grid-column: 1 / 2;
+}
+
+.right {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-row: 1 / 2;
+}
+
+.main {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+    .main-left {
+        grid-column: 1 / 2;
+        display: grid;
+        grid-template-rows: 1fr 10fr;
+    }
+
+        .main-left > p {
+            grid-row: 1 / 2;
+        }
+
+        .project-cards {
+            grid-row: 2 / 3;
+        }
+
+    .main-right {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+        
