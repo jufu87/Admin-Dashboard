@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    
     margin: 0;
     padding: 0;
 }
@@ -17,106 +16,138 @@ div {
 .dashboard {
     background-color: rgb(58, 131, 240);
     color: white;
-
     grid-column: 1 / 2;
     display: grid;
     grid-template-rows: 1fr 10fr;
 }
 
-    .branding {
-        grid-row: 1 / 2;
-    }
+.branding {
+    grid-row: 1 / 2;
+}
 
-    .navigation {
-        grid-row: 2 / 3;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
+.navigation {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
-        ul {
-            list-style-image: url(https://placehold.co/10x10/png);
-            margin-left: 40px;
-        }
+ul {
+    list-style-image: url(https://placehold.co/10x10/png);
+    margin-left: 40px;
+}
 
 .right {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 150px 5fr;
 }
 
 .header {
     background-color: rgb(206, 209, 163);
     grid-row: 1 / 2;
-
     display: grid;
     grid-template-rows: 50px 80px;
+    padding: 20px 40px;
 }
 
-    .search {
-        grid-row: 1 / 2;
+.search {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+}
 
-        display: flex;
-        justify-content: space-between;
-    }
+.search-left {
+    display: flex;
+}
 
-        .search-right {
-            display: flex;
-        }
+.search-left button {
+    margin-right: 20px;
+}
 
-    .heading {
-        grid-row: 2 / 3;
+.search-right {
+    display: flex;
+    gap: 20px;
+}
 
-        display: flex;
-        justify-content: space-between;
-    }
+.heading {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+}
 
-        .user-info {
-            display: flex;
-        }
+.buttons button {
+    margin: 0 20px;
+}
+
+.user-info {
+    display: flex;
+}
 
 .main {
     background-color: rgb(219, 219, 219);
-
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 8fr 2fr;
 }
 
-    .main-left {
-        background-color: rgb(213, 186, 231);
-        padding: 15px;
+.main-left {
+    background-color: rgb(213, 186, 231);
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: min-content 10fr;
+}
 
-        grid-column: 1 / 2;
-        display: grid;
-        grid-template-rows: 1fr 10fr;
-    }
+.main-left>h3 {
+    grid-row: 1 / 2;
+    padding-top: 30px;
+    padding-left: 15px;
+}
 
-        .main-left > p {
-            grid-row: 1 / 2;
-        }
+.project-cards {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 15px 15px;
+    gap: 15px;
+}
 
-        .project-cards {
-            grid-row: 2 / 3;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 15px;
-        }
+.card {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
 
-            .card {
-                border: none;
-                border-radius: 10px;
-                padding: 10px;
+.main-right {
+    background-color: rgb(243, 162, 162);
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: min-content 5fr min-content 5fr;
+    gap: 15px;
+    padding-right: 15px;
+}
 
-                background-color: white;
-            }
+#announcements-paragraph {
+    padding-top: 30px;
+    grid-row: 1 / 2;
+}
 
-    .main-right {
-        background-color: rgb(243, 162, 162);
+.announcements {
+    grid-row: 2 / 3;
+}
 
-        grid-column: 2 / 3;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
+#trending-paragraph {
+    padding-top: 20px;
+    grid-row: 3 / 4;
+}
 
-        
+.trending {
+    grid-row: 4 / 5;
+    margin-bottom: 15px;
+}
+
+h5+p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
