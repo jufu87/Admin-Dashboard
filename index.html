@@ -11,9 +11,13 @@
 <body>
     <div class="container">
         <div class="dashboard">
-            <div class="logo">Dashboard</div>
-            <div class="links">
-                <ul>
+            <div class="branding">
+                
+                <p><img src="https://placehold.co/30x30/png" alt="Logo">Dashboard</p>
+
+            </div>
+            <div class="navigation">
+                <ul class="nav-top">
                     <li>Home</li>
                     <li>Profile</li>
                     <li>Messages</li>
@@ -21,7 +25,7 @@
                     <li>Tasks</li>
                     <li>Communities</li>
                 </ul>
-                <ul>
+                <ul class="nav-bottom">
                     <li>Settings</li>
                     <li>Support</li>
                     <li>Privacy</li>
@@ -31,14 +35,21 @@
         <div class="right">
             <header class="header">
                 <div class="search">
-                    <p id="search-bar">Search bar</p>
+                    <div class="search-left">
+                        <form action="">
+                            <button type="submit">Submit</button>
+                            <label for="searchbar"></label>
+                            <input type="text" placeholder="Search..." name="search" id="searchbar">
+                        </form>
+                    </div>
+                    <div class="search-right">
+                        <p>*</p>
+                        <p>+</p>
+                        <p>Morgan Oakley</p>
+                    </div>
                 </div>
                 <div class="heading">
-                    <form action="">
-                        <label for="searchbar"></label>
-                        <input type="text" placeholder="Search..." name="search" id="searchbar">
-                        <button type="submit">Submit</button>
-                    </form>
+
                     <p id="">User info etc</p>
                     <div class="buttons">
                         <button>New</button>
