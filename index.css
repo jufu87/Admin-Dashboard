@@ -15,8 +15,21 @@ div {
 }
 
 .dashboard {
+    background-color: rgb(58, 131, 240);
+    color: white;
+
     grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
 }
+
+    .logo {
+        grid-row: 1 / 2;
+    }
+
+    .links {
+        grid-row: 2 / 3;
+    }
 
 .right {
     grid-column: 2 / 3;
@@ -25,16 +38,21 @@ div {
 }
 
 .header {
+    background-color: rgb(206, 209, 163);
     grid-row: 1 / 2;
 }
 
 .main {
+    background-color: rgb(219, 219, 219);
+
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 5fr 1fr;
 }
 
     .main-left {
+        background-color: rgb(213, 186, 231);
+
         grid-column: 1 / 2;
         display: grid;
         grid-template-rows: 1fr 10fr;
@@ -49,6 +67,8 @@ div {
         }
 
     .main-right {
+        background-color: rgb(243, 162, 162);
+
         grid-column: 2 / 3;
         display: grid;
         grid-template-rows: 1fr 1fr;
