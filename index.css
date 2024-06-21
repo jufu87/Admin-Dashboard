@@ -73,6 +73,7 @@ div {
 
     .main-left {
         background-color: rgb(213, 186, 231);
+        padding: 15px;
 
         grid-column: 1 / 2;
         display: grid;
@@ -90,11 +91,13 @@ div {
             gap: 15px;
         }
 
-            /* .card {
+            .card {
                 border: none;
                 border-radius: 15px;
                 padding: 10px;
-            } */
+
+                background-color: white;
+            }
 
     .main-right {
         background-color: rgb(243, 162, 162);
