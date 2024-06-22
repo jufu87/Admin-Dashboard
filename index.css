@@ -4,13 +4,22 @@
     padding: 0;
 }
 
+html {
+    height: 100%;    
+}
+
+body {
+    
+}
+
 div {
     outline: 1px orange solid;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 2fr 14fr;
+    height: 100vh;
 }
 
 .dashboard {
@@ -47,7 +56,7 @@ ul {
     background-color: rgb(206, 209, 163);
     grid-row: 1 / 2;
     display: grid;
-    grid-template-rows: 50px 80px;
+    grid-template-rows: 1fr 1fr;
     padding: 20px 40px;
 }
 
@@ -55,6 +64,7 @@ ul {
     grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .search-left {
@@ -78,6 +88,11 @@ input[type="text"] {
     grid-row: 2 / 3;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    justify-content: center;
 }
 
 .buttons button {
@@ -114,28 +129,30 @@ input[type="text"] {
     background-color: rgb(219, 219, 219);
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 8fr 2fr;
+    grid-template-columns: 10fr minmax(300px, 2fr);
 }
 
 .main-left {
     background-color: rgb(213, 186, 231);
     grid-column: 1 / 2;
     display: grid;
-    grid-template-rows: min-content 10fr;
+    grid-template-rows: min-content 1fr;
+    
 }
 
 .main-left>h3 {
     grid-row: 1 / 2;
     padding-top: 30px;
-    padding-left: 15px;
+    padding-left: 25px;
 }
 
 .project-cards {
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin: 15px 15px;
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 15px 25px;
+    gap: 25px;
+    max-height: 90%;
 }
 
 
@@ -150,15 +167,17 @@ input[type="text"] {
 
 .project-card {
     border-left: 8px orange solid;
+    
 }
 
 .main-right {
     background-color: rgb(243, 162, 162);
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: min-content 5fr min-content 5fr;
+    grid-template-rows: min-content min-content min-content min-content;
     gap: 15px;
     padding-right: 15px;
+    
 }
 
 #announcements-paragraph {
@@ -168,6 +187,10 @@ input[type="text"] {
 
 .announcements {
     grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 300px;
 }
 
 #trending-paragraph {
@@ -177,11 +200,12 @@ input[type="text"] {
 
 .trending {
     grid-row: 4 / 5;
-    margin-bottom: 15px;
-
+    /* margin-bottom: 54%; */
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    max-height: 250px;
 }
 
 .trending>p {
